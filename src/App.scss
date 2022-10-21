@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+//Colors
+$stone50: #fafaf9;
+$stone100: #f5f5f4;
+$stone200: #e7e5e4;
+$stone300: #d6d3d1;
+$stone400: #a8a29e;
+$stone500: #78716c;
+$stone600: #525252;
+$stone700: #44403c;
+$stone800: #262626;
+$stone900: #1c1917;
+
+$bg: #fefad4;
+$secondary: #fcd0ba;
+$primary: #765d69;
+$green: #8fb9a8;
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-col-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    @extend .flex-col-center;
+    cursor: pointer;
+    border: none;
+    background-color: $green;
+    border-radius: 50%;
+    color: $stone50;
+    transition: all 0.3s ease;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.App {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: $bg;
+    color: $primary;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.pomodoro-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-box {
+    @extend .flex-col-center;
+    width: 210px;
+    height: 210px;
+    border: 4px solid $secondary;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    .timer {
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .timer-label {
+        font-size: 16px;
+    }
+}
+
+.btn-startStop {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.control-box {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.control {
+    width: fit-content;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &-title {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        display: flex;
+
+        button {
+            width: 24px;
+            height: 24px;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .length-number {
+            display: inline-block;
+            width: 35px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+
+.option-box {
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+}
