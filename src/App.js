@@ -13,8 +13,8 @@ const formatTime = (time) => (time < 10 ? `0${time}` : time);
 function App() {
     const [isStart, setIsStart] = useState(false);
     const [length, setLength] = useState({
-        break: 0.1,
-        session: 0.1,
+        break: 5,
+        session: 15,
     });
     const [timeType, setTimeType] = useState("session");
     const [timeLeft, setTimeLeft] = useState(minutesToMillis(length.session));
