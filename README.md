@@ -4,7 +4,7 @@ A simple pomodoro timer app built with react, that helps users improve their pro
 
 #### Live Demo
 
-A live demo of the Pomodoro Timer app can be found here: [https://codepen.com/username/pomodoro-timer](https://codepen.com/username/pomodoro-timer)
+A live demo of the Pomodoro Timer app can be found here: [Codepen](https://codepen.io/FahrulZul/pen/gOjMBNR)
 
 #### Background
 
